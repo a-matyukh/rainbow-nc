@@ -1,6 +1,6 @@
 /**
  * MVP feature app-map:
- * - show random static card
+ * + show random static card
  * - show with interval time
  * - custom interval time
  * - isCardRandomPosition
