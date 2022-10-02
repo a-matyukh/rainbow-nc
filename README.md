@@ -1,0 +1,11 @@
+MVP feature app-map:
+- [ ] show random static card
+  - [x] migrate to sveltekit
+  - [ ] basic ui
+  - [ ] more comfortable colors
+- [ ] show with interval time
+- [ ] custom interval time
+- [ ] isCardRandomPosition
+- [ ] points and SR
+- [ ] control game (Game.stop)
+- [ ] clap

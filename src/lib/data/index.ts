@@ -1,19 +1,8 @@
-/**
- * MVP feature app-map:
- * + show random static card
- * - show with interval time
- * - custom interval time
- * - isCardRandomPosition
- * - points and SR
- * - control game (Game.stop)
- * - clap
- */
-
-//////////////////////////////
+import { writable } from "svelte/store"
 
 type RainbowColor = "red" | "orange" | "yellow" | "green" | "blue" | "indigo" | "violet"
 
-class Card {
+export class Card {
     say: string
     bg: string
     constructor() {
@@ -30,15 +19,14 @@ class Card {
         return rainbowColors[colorIndex]
     }
 }
+
 class Game {
-    card: Card = new Card()
+    card = writable(<Card>new Card())
     showRandomCard() {
-        this.card = new Card()
-        console.log(`%c${this.card.say}`, `background-color: ${this.card.bg};`)
+        this.card.set(new Card())
     }
 }
 
-//////////////////////////////
-
 let game = new Game()
-game.showRandomCard()
+
+export { game }
