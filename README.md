@@ -1,4 +1,4 @@
-MVP feature app-map:
+MVP-demo features:
 - [ ] show random static card
   - [x] migrate to sveltekit
   - [ ] basic ui
