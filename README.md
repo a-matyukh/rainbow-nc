@@ -1,7 +1,7 @@
 MVP-demo features:
 - [ ] show random static card
   - [x] migrate to sveltekit
-  - [ ] basic ui
+  - [x] basic ui
   - [ ] more comfortable colors
 - [ ] show with interval time
 - [ ] custom interval time

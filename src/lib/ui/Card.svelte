@@ -3,6 +3,13 @@
 </div>
 
 <style>
+div {
+    display: inline-grid;
+    place-content: center;
+    width: 300px;
+    height: 100px;
+    font-size: 36px;
+}
 .whiteFont {
     color: white;
 }
