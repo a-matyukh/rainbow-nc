@@ -8,6 +8,7 @@
 }
 </style>
 <script>
-import { game, darkColors } from "$lib/data"
+import { game } from "$lib/data"
+import { darkColors } from "$lib/data/Card"
 let { card } = game
 </script>
