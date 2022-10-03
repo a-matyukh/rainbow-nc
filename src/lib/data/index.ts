@@ -1,6 +1,7 @@
 import { writable } from "svelte/store"
 
 type RainbowColor = "red" | "orange" | "yellow" | "green" | "blue" | "indigo" | "violet"
+const darkColors = ["red", "green", "indigo", "blue"]
 
 export class Card {
     say: string
@@ -29,4 +30,4 @@ class Game {
 
 let game = new Game()
 
-export { game }
+export { game, darkColors }
