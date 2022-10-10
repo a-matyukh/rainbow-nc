@@ -2,7 +2,7 @@ MVP-demo features:
 - [x] show random static card
   - [x] migrate to sveltekit
   - [x] basic ui
-- [ ] show with interval time
+- [x] show with interval time
 - [ ] custom interval time
 - [ ] isCardRandomPosition
 - [ ] points and SR

@@ -1,6 +1,11 @@
 <Card />
 <p>
-    <button on:click={() => game.showRandomCard()}>Show next card</button>
+    {#if !$isStart}
+        <button on:click={() => game.showRandomCard()}>Show next card</button>
+    {/if}
+    <button on:click={() => game.toggle()}>
+        {!$isStart ? "Show with interval time" : "Stop game"}
+    </button>
 </p>
 
 <style>
@@ -14,5 +19,6 @@
 </style>
 <script>
 import { game } from "$lib/data"
+const { isStart } = game
 import Card from "$lib/ui/Card.svelte"
 </script>
