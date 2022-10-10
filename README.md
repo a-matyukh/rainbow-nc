@@ -6,6 +6,5 @@ MVP-demo features:
 - [x] control game (Game.stop)
 - [x] custom interval time
 - [x] random card position
-- [ ] points and SR
-- [ ] clap
+- [x] points and SR
 - [ ] help "How to play the game"
