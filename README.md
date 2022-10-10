@@ -3,9 +3,9 @@ MVP-demo features:
   - [x] migrate to sveltekit
   - [x] basic ui
 - [x] show with interval time
+- [x] control game (Game.stop)
 - [ ] custom interval time
 - [ ] isCardRandomPosition
 - [ ] points and SR
-- [ ] control game (Game.stop)
 - [ ] clap
 - [ ] help "How to play the game"
