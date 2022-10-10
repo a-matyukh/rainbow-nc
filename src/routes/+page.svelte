@@ -1,12 +1,19 @@
+{#if !$isStart}
+    <p>
+        <button on:click={() => game.showRandomCard()}>Show next card</button>
+    </p>
+{/if}
 <Card />
 <p>
-    {#if !$isStart}
-        <button on:click={() => game.showRandomCard()}>Show next card</button>
-    {/if}
     <button on:click={() => game.toggle()}>
         {!$isStart ? "Show with interval time" : "Stop game"}
     </button>
 </p>
+{#if !$isStart}
+    <p>
+        Interval tick (ms): <input type="number" bind:value={game.tick} min="100" max="10000">
+    </p>
+{/if}
 
 <style>
 :global(body) {
