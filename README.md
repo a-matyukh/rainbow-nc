@@ -5,7 +5,7 @@ MVP-demo features:
 - [x] show with interval time
 - [x] control game (Game.stop)
 - [x] custom interval time
-- [ ] isCardRandomPosition
+- [x] random card position
 - [ ] points and SR
 - [ ] clap
 - [ ] help "How to play the game"

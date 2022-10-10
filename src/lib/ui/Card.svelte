@@ -1,14 +1,25 @@
-<div style="background-color: {$card.bg};" class:whiteFont={darkColors.includes($card.bg)}>
+<div
+    style="
+        width: {$card.size.width}px;
+        height: {$card.size.height}px;
+        left: {$card.position.x}px;
+        top: {$card.position.y}px;
+        background-color: {$card.bg};
+    "
+    class:isRandomCardPosition = {$isStart&&$isRandomCardPosition}
+    class:whiteFont={darkColors.includes($card.bg)}>
     {$card.say}
 </div>
 
 <style>
 div {
+    position: static;
     display: inline-grid;
     place-content: center;
-    width: 300px;
-    height: 100px;
     font-size: 36px;
+}
+.isRandomCardPosition {
+    position: fixed;
 }
 .whiteFont {
     color: white;
@@ -17,5 +28,5 @@ div {
 <script>
 import { game } from "$lib/data"
 import { darkColors } from "$lib/data/Card"
-let { card } = game
+let { card, isRandomCardPosition, isStart } = game
 </script>
