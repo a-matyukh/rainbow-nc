@@ -17,6 +17,7 @@ div {
     display: inline-grid;
     place-content: center;
     font-size: 36px;
+    border-radius: 5px;
 }
 .isRandomCardPosition {
     position: fixed;

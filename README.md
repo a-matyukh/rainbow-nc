@@ -7,4 +7,4 @@ MVP-demo features:
 - [x] custom interval time
 - [x] random card position
 - [x] points and SR
-- [ ] help "How to play the game"
+- [x] help "How to play the game"
